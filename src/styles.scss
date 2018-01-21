@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+
+   @import url('https://fonts.googleapis.com/css?family=Montserrat');
+   @import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
+
+    $mainColor : #1d9d74 ;
+    $secondaryColor : white ;
+    $editorColor : gold ;
+
+    $secondaryFont : 'Montserrat', sans-serif;
+    $mainFont : 'Oswald', sans-serif;
+
+    #gameContent{
+    	padding: 0 2em;
+    }
+
+	.jumbotron{
+		background: $mainColor !important;
+		color: $secondaryColor;
+		
+		div.selectContainer{
+			display: inline-block;
+			select{
+			color: black;
+			height: 33px;
+			padding : 2px;
+			}
+		}
+
+		div.inputContainer{
+			display: inline-block;
+			width: 50%;
+			input{
+	    	border-radius: 0px !important;
+	    	margin: 0 auto;
+	    	}
+		}
+	}
+
+	.panel{
+		height: 210px;
+		max-height: 210px;
+		div.panel-heading{
+			background: $mainColor !important;
+		}
+		div.panel-title{
+		font-size: 14px !important;
+	    color: $secondaryColor;
+	    line-height: 20px;
+	    letter-spacing: 1.2px;
+	    left: 1.3px;	 
+	    font-family: $mainFont;   
+		}
+		i.fa-certificate{
+			color: $editorColor;
+		}
+		div.panel-body{
+			p{
+				font-family: $secondaryFont;
+			}
+		}
+	}
+
+	.ngui-auto-complete > ul{
+		background:  $mainColor !important;
+		color: $secondaryColor !important;
+	}
+
+	.ngx-pagination .current {
+		background: $mainColor !important;
+	}
+
+	@media only screen and (max-width: 500px) {
+		div.individualGameContainer{
+			width: 100% !important;
+		}		
+	}
+      
+    
